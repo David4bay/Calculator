@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+div.calc-body {
+  display: grid;
+}/*# sourceMappingURL=styles.css.map */
