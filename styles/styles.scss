@@ -70,6 +70,18 @@ div.numbers:active {
 
 div.clear {
     @extend %btn-styling;
+
+    &:hover {
+        @extend %btn-styling-hover;
+    }
+}
+
+div.equals {
+    @extend %btn-styling;
+
+    &:hover {
+        @extend %btn-styling-hover;
+    }
 }
 
 h3:hover {
