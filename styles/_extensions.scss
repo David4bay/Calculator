@@ -1,0 +1,60 @@
+$btn-color: hsl(0, 0%, 100%);
+$border: 1px solid black;
+$background: linear-gradient(3turn, hsla(205, 55%, 45%, 0.8), hsla(139, 45%, 55%, 0.5));
+$calc-height: 425px;
+
+%calc-body {
+    display: flex;
+    flex-direction: column;
+    width: $calc-height;
+    padding: 1rem 1rem 1.5rem 1rem;
+    border: $border;
+    border-radius: 15px;
+    z-index: 2;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 45%, 45%, 0.3);
+    position: relative;
+}
+
+%inner-calc-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 215px;
+    outline: 1px solid $btn-color;
+    outline-offset: 1rem;
+    outline-width: 0.2rem;
+    outline-color: hsla(50, 35%, 65%, 0.9);
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1.2rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+%pseudo-style-1 {
+    content: '';
+    width: 1000vw;
+    height: 10px;
+    z-index: 1;
+    background-color: gray;
+    position: absolute;
+    bottom: 100px;   
+}
+
+%pseudo-style-2 {
+    content: '';
+    width: 1000vw;
+    height: 10px;
+    z-index: 1;
+    background-color: gray;
+    position: absolute;
+    top: 100px;
+}
+

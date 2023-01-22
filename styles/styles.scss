@@ -20,56 +20,29 @@ body {
 }
 
 /*
-
 Note to add scss variables for like values. Use partials for group style like buttons and then extensions where possible, can also implement a theme switcher.
-
 */
+
+@import 'extensions';
 
 main {
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(3turn, hsla(205, 55%, 45%, 0.8), hsla(139, 45%, 55%, 0.5));
+    background: $background;
 }
 
 div {
 
     &.calc-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 425px;
-        padding: 1rem 1rem 1.5rem 1rem;
-        border: 1px solid black;
-        border-radius: 15px;
-        z-index: 2;
-        overflow: hidden;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        background-color: hsla(0, 45%, 45%, 0.3);
-        position: relative;
+        @extend %calc-body;
 
         h3 {
-            color: hsl(0, 0%, 100%);
+            color: $btn-color;
         }
     }
 
     &.calc-body {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 215px;
-        outline: 1px solid black;
-        outline-offset: 1rem;
-        outline-width: 0.2rem;
-        outline-color: hsla(50, 35%, 65%, 0.9);
-        gap: 1rem;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1rem;
-        margin: 1.2rem;
-        border-radius: 15px;
-        border: 1px solid black;
-        z-index: 2;
+        @extend %inner-calc-body;
     }
 
     &.numbers {
@@ -77,10 +50,10 @@ div {
         padding: 0.5rem;
         margin: 0.1rem;
         align-items: center;
-        justify-content: space-around;
+        justify-self: space-around;
         border: 1px solid black;
         border-radius: 5px;
-        color: hsl(0, 0%, 100%), 0.945), 0.726);
+        color: hsl(0, 0%, 100%);
         z-index: 2;
         transition: all 0.4s;
         background-color: hsla(40, 100%, 50%, 0.5);
@@ -101,6 +74,7 @@ div.numbers:hover {
     color:hsla(139, 45%, 55%, 1);
     background-color: hsla(55, 100%, 50%, 0.6);
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 div.numbers:active {
@@ -108,6 +82,7 @@ div.numbers:active {
     background-color: hsla(55, 100%, 70%, 1);
     box-shadow: 0px 0px 10px 5px;
     transform: scale(0.9);
+    cursor: grab;
 }
 
 h3:hover {
@@ -115,7 +90,7 @@ h3:hover {
 }
 
 div.style {
-    width: 100vw;
+    width: 1000vw;
     height: 10px;
     z-index: 1;
     display: flex;
@@ -125,23 +100,11 @@ div.style {
     transform: rotate(45deg);
 
     &::after {
-        content: '';
-        width: 100vw;
-        height: 10px;
-        z-index: 1;
-        background-color: gray;
-        position: absolute;
-        bottom: 100px;
+        @extend %pseudo-style-1;
     }
 
     &::before {
-        content: '';
-        width: 100vw;
-        height: 10px;
-        z-index: 1;
-        background-color: gray;
-        position: absolute;
-        top: 100px;
+        @extend %pseudo-style-2;
     }
 }
 
