@@ -19,6 +19,12 @@ body {
     line-height: 1.7;
 }
 
+/*
+
+Note to add scss variables for like values. Use partials for group style like buttons and then extensions where possible, can also implement a theme switcher.
+
+*/
+
 main {
     display: flex;
     min-height: 100vh;
@@ -43,7 +49,7 @@ div {
         position: relative;
 
         h3 {
-            color: #fff;
+            color: hsl(0, 0%, 100%);
         }
     }
 
@@ -74,7 +80,7 @@ div {
         justify-content: space-around;
         border: 1px solid black;
         border-radius: 5px;
-        color: #fff;
+        color: hsl(0, 0%, 100%), 0.945), 0.726);
         z-index: 2;
         transition: all 0.4s;
         background-color: hsla(40, 100%, 50%, 0.5);
@@ -82,7 +88,7 @@ div {
 
     &.result {
         display: block;
-        color: #fff;
+        color: hsl(0, 0%, 100%);
         width: 100%;
         height: 10vh;
         z-index: 2;
@@ -101,6 +107,7 @@ div.numbers:active {
     color: hsla(139, 70%, 80%, 1);
     background-color: hsla(55, 100%, 70%, 1);
     box-shadow: 0px 0px 10px 5px;
+    transform: scale(0.9);
 }
 
 h3:hover {
@@ -137,3 +144,5 @@ div.style {
         top: 100px;
     }
 }
+
+

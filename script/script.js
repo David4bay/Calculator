@@ -1,5 +1,5 @@
-const button = getElementById('calc-button');
+/* 
 
-function doThis() {
-    alert('You clicked me!');
-}
+Add functionality in pure JavaScript DOM and leave comments on jQuery implementation.
+
+*/
