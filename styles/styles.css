@@ -86,7 +86,7 @@ main {
 div.calc-wrapper h3 {
   color: hsl(0deg, 0%, 100%);
 }
-div.numbers {
+div.symbol {
   display: flex;
   padding: 0.5rem;
   margin: 0.1rem;
@@ -109,14 +109,14 @@ div.result {
   border-radius: 5px;
 }
 
-div.numbers:hover {
+div.symbol:hover {
   color: hsl(139deg, 45%, 55%);
   background-color: hsla(55deg, 100%, 50%, 0.6);
   cursor: pointer;
   transform: scale(1.1);
 }
 
-div.numbers:active {
+div.symbol:active {
   color: hsl(139deg, 70%, 80%);
   background-color: hsl(55deg, 100%, 70%);
   box-shadow: 0px 0px 10px 5px;

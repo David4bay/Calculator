@@ -13,9 +13,9 @@ const result = document.querySelector('.result');
 
 const resultValue = result.innerHTML;
 
-const equals = document.querySelector('.equals');
+const equals = document.getElementById('equals');
 
-const clear = document.querySelector('.clear');
+const clear = document.getElementById('clear');
 
 const empty = '';
 
