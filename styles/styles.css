@@ -32,10 +32,13 @@ div.calc-wrapper {
   padding: 1rem 1rem 1.5rem 1rem;
   border: 1px solid black;
   border-radius: 15px;
+  z-index: 2;
+  overflow: hidden;
   margin: auto;
   justify-content: center;
   align-items: center;
   background-color: hsla(0deg, 45%, 45%, 0.3);
+  position: relative;
 }
 div.calc-wrapper h3 {
   color: #fff;
@@ -54,8 +57,9 @@ div.calc-body {
   align-items: center;
   padding: 1rem;
   margin: 1.2rem;
-  border-radius: 1px;
+  border-radius: 15px;
   border: 1px solid black;
+  z-index: 2;
 }
 div.numbers {
   display: flex;
@@ -66,6 +70,7 @@ div.numbers {
   border: 1px solid black;
   border-radius: 5px;
   color: #fff;
+  z-index: 2;
   transition: all 0.4s;
   background-color: hsla(40deg, 100%, 50%, 0.5);
 }
@@ -74,6 +79,7 @@ div.result {
   color: #fff;
   width: 100%;
   height: 10vh;
+  z-index: 2;
   background-color: black;
   border-radius: 5px;
 }
@@ -86,4 +92,33 @@ div.numbers:hover {
 
 h3:hover {
   color: #eaf201;
+}
+
+div.style {
+  width: 100vw;
+  height: 10px;
+  z-index: 1;
+  display: flex;
+  align-self: center;
+  background-color: gray;
+  position: absolute;
+  transform: rotate(45deg);
+}
+div.style::after {
+  content: "";
+  width: 100vw;
+  height: 10px;
+  z-index: 1;
+  background-color: gray;
+  position: absolute;
+  bottom: 100px;
+}
+div.style::before {
+  content: "";
+  width: 100vw;
+  height: 10px;
+  z-index: 1;
+  background-color: gray;
+  position: absolute;
+  top: 100px;
 }/*# sourceMappingURL=styles.css.map */
