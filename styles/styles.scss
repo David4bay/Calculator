@@ -97,6 +97,12 @@ div.numbers:hover {
     cursor: pointer;
 }
 
+div.numbers:active {
+    color: hsla(139, 70%, 80%, 1);
+    background-color: hsla(55, 100%, 70%, 1);
+    box-shadow: 0px 0px 10px 5px;
+}
+
 h3:hover {
     color: #eaf201;
 }
