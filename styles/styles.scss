@@ -13,6 +13,10 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    font-family: 'sans-serif';
+    font-size: medium;
+    font-weight: bold;
+    line-height: 1.7;
 }
 
 main {
@@ -26,8 +30,8 @@ div {
     &.calc-wrapper {
         display: flex;
         flex-direction: column;
-        width: 355px;
-        padding: 1rem;
+        width: 425px;
+        padding: 1rem 1rem 1.5rem 1rem;
         border: 1px solid black;
         border-radius: 15px;
         margin: auto;
@@ -67,6 +71,7 @@ div {
         border: 1px solid black;
         border-radius: 5px;
         color: #fff;
+        transition: all 0.4s;
         background-color: hsla(40, 100%, 50%, 0.5);
     }
 
@@ -80,4 +85,12 @@ div {
     }
 }
 
-div.numbers:hover
+div.numbers:hover {
+    color:hsla(139, 45%, 55%, 1);
+    background-color: hsla(55, 100%, 50%, 0.6);
+    cursor: pointer;
+}
+
+h3:hover {
+    color: #eaf201;
+}
