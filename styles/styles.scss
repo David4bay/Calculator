@@ -14,3 +14,70 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+main {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(3turn, hsla(205, 55%, 45%, 0.8), hsla(139, 45%, 55%, 0.5));
+}
+
+div {
+
+    &.calc-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 355px;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: hsla(0, 45%, 45%, 0.3);
+
+        h3 {
+            color: #fff;
+        }
+    }
+
+    &.calc-body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 215px;
+        outline: 1px solid black;
+        outline-offset: 1rem;
+        outline-width: 0.2rem;
+        outline-color: hsla(50, 35%, 65%, 0.9);
+        gap: 1rem;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        margin: 1.2rem;
+        border-radius: 1px;
+        border: 1px solid black;
+    }
+
+    &.numbers {
+        display: flex;
+        padding: 0.5rem;
+        margin: 0.1rem;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: #fff;
+        background-color: hsla(40, 100%, 50%, 0.5);
+    }
+
+    &.result {
+        display: block;
+        color: #fff;
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        border-radius: 5px;
+    }
+}
+
+div.numbers:hover
