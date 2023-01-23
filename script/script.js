@@ -9,7 +9,9 @@ document.getElementById("1").addEventListener("click", function(){
 
 */
 
-const results = document.getElementById("result");
+const results = document.getElementById("result").innerText;
+
+const output = `${Number(results)}`;
 
 const addition = document.getElementById("+");
 
@@ -44,7 +46,7 @@ division.addEventListener("click", (e) => {
 const equals = document.getElementById("equals");
 
 equals.addEventListener("click", (e) => {
-    document.getElementById("result").innerText = +`${results}`;
+    document.getElementById("result").innerText = output;
 });
 
 const clear = document.getElementById("clear");
