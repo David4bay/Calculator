@@ -11,49 +11,50 @@ document.getElementById("1").addEventListener("click", function(){
 
 const results = document.getElementById("result").innerText;
 
-const output = `${Number(results)}`;
+const output = eval(results);
 
 const addition = document.getElementById("+");
 
 addition.addEventListener("click", (e) => {
-    document.getElementById("result").innerText += " + ";
-})
+    document.getElementById("result").innerText += "+";
+});
 
 const subtraction = document.getElementById("-");
 
 subtraction.addEventListener("click", (e) => {
-    document.getElementById("result").innerText += " - "
-})
+    document.getElementById("result").innerText += "-"
+});
 
 const multiply = document.getElementById("*");
 
 multiply.addEventListener("click", (e) => {
-    document.getElementById("result") += " * ";
-})
+    document.getElementById("result").innerText += "*";
+});
 
 const exponent = document.getElementById("**");
 
 exponent.addEventListener("click", (e) => {
     document.getElementById("result").innerText += "**";
-})
+});
 
 const division = document.getElementById("/");
 
 division.addEventListener("click", (e) => {
-    document.getElementById("result").innerText += " / "
-})
+    document.getElementById("result").innerText += "/"
+});
 
 const equals = document.getElementById("equals");
 
 equals.addEventListener("click", (e) => {
-    document.getElementById("result").innerText = output;
+    document.getElementById("result").innerText = eval(document.getElementById("result").innerText);
+
 });
 
 const clear = document.getElementById("clear");
 
 clear.addEventListener("click", (e) => {
     document.getElementById("result").innerText = "";
-})
+});
 
 const numOne = document.getElementById("1");
 
