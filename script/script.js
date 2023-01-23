@@ -9,10 +9,6 @@ document.getElementById("1").addEventListener("click", function(){
 
 */
 
-const results = document.getElementById("result").innerText;
-
-const output = eval(results);
-
 const addition = document.getElementById("+");
 
 addition.addEventListener("click", (e) => {
