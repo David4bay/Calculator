@@ -2,33 +2,113 @@
 
 Add functionality in pure JavaScript DOM and leave comments on jQuery implementation.
 
-*/
-
-
-const btn = document.querySelector('.numbers');
-
-const btnValue = btn.innerHTML;
-
-const result = document.querySelector('.result');
-
-const resultValue = result.innerHTML;
-
-const equals = document.getElementById('equals');
-
-const clear = document.getElementById('clear');
-
-const empty = '';
-
-const clearValue = clear.innerHTML;
-
-btn.addEventListener('click', (e) => {
-    resultValue = btnValue;
+document.getElementById("1").addEventListener("click", function(){
+    document.getElementById("result").innerText += "1";
 });
 
-equals.addEventListener('click', (e) => {
-    +resultValue;
+
+*/
+
+const results = document.getElementById("result");
+
+const addition = document.getElementById("+");
+
+addition.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += " + ";
 })
 
-clear.addEventListener('click', (e) => {
-    resultValue = empty;
+const subtraction = document.getElementById("-");
+
+subtraction.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += " - "
 })
+
+const multiply = document.getElementById("*");
+
+multiply.addEventListener("click", (e) => {
+    document.getElementById("result") += " * ";
+})
+
+const exponent = document.getElementById("**");
+
+exponent.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "**";
+})
+
+const division = document.getElementById("/");
+
+division.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += " / "
+})
+
+const equals = document.getElementById("equals");
+
+equals.addEventListener("click", (e) => {
+    document.getElementById("result").innerText = +`${results}`;
+});
+
+const clear = document.getElementById("clear");
+
+clear.addEventListener("click", (e) => {
+    document.getElementById("result").innerText = "";
+})
+
+const numOne = document.getElementById("1");
+
+numOne.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "1";
+});
+
+const numTwo = document.getElementById("2");
+
+numTwo.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "2";
+});
+
+const numThree = document.getElementById("3");
+
+numThree.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "3";
+});
+
+const numFour = document.getElementById("4");
+
+numFour.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "4";
+});
+
+const numFive = document.getElementById("5");
+
+numFive.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "5";
+});
+
+const numSix = document.getElementById("6");
+
+numSix.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "6";
+});
+
+const numSeven = document.getElementById("7");
+
+numSeven.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "7";
+});
+
+const numEight = document.getElementById("8");
+
+numEight.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "8";
+});
+
+const numNine = document.getElementById("9");
+
+numNine.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "9";
+});
+
+const zero = document.getElementById("0");
+
+zero.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "0";
+});

@@ -100,7 +100,8 @@ div.symbol {
   background-color: hsla(40deg, 100%, 50%, 0.5);
 }
 div.result {
-  display: block;
+  display: flex;
+  align-items: center;
   color: hsl(0deg, 0%, 100%);
   width: 100%;
   height: 10vh;
