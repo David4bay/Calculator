@@ -1,7 +1,7 @@
 # Calculator
 Making a calculator using pure JavaScript DOM
 
-![Screenshot of my Calculator](https://github.com/David4bay/Calculator/blob/main/Screenshot/Screenshot.PNG?raw=false)
+![Screenshot of my Calculator](https://github.com/David4bay/Calculator/blob/main/Screenshot/Screenshot.PNG?)
 
 # Project URL
 Please visit https://astonishing-choux-a439c4.netlify.app/ to view the full app.
