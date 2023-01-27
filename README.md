@@ -4,6 +4,9 @@ Making a calculator using pure JavaScript DOM
 # Project URL
 Please visit https://astonishing-choux-a439c4.netlify.app/ to view the full app.
 
+# Updates
+Added keypress DOM event listener. 27-01-23.
+
 # What I learned
 I learnt a lot about JavaScript DOM scripting.
 

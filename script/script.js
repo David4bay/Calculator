@@ -110,3 +110,56 @@ const zero = document.getElementById("0");
 zero.addEventListener("click", (e) => {
     document.getElementById("result").innerText += "0";
 });
+
+document.addEventListener("keypress", function(event) {
+    
+    switch (event.code) {
+      case "Numpad1":
+            document.getElementById("result").innerText += "1";
+        break;
+      case "Numpad2":
+        document.getElementById("result").innerText += "2";
+        break;
+      case "Numpad3":
+        document.getElementById("result").innerText += "3";
+        break;
+      case "Numpad4":
+        document.getElementById("result").innerText += "4";
+        break;
+      case "Numpad5":
+        document.getElementById("result").innerText += "5";
+        break;
+      case "Numpad6":
+        document.getElementById("result").innerText += "6";
+        break;
+      case "Numpad7":
+        document.getElementById("result").innerText += "7";
+        break;
+      case "Numpad8":
+        document.getElementById("result").innerText += "8";
+        break;
+      case "Numpad9":
+        document.getElementById("result").innerText += "9";
+        break;
+      case "Numpad0":
+        document.getElementById("result").innerText += "0";
+        break;
+      case "NumpadAdd":
+        document.getElementById("result").innerText += "+";
+        break;
+      case "NumpadSubtract":
+        document.getElementById("result").innerText += "-";
+        break;
+      case "NumpadMultiply":
+        document.getElementById("result").innerText += "*";
+        break;
+      case "NumpadDivide":
+        document.getElementById("result").innerText += "/";
+        break;
+      case "Equal":
+        document.getElementById("result").innerText =  eval(document.getElementById("result").innerText);
+        default:
+        break;
+    }
+  });
+  
