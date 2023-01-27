@@ -35,7 +35,7 @@ div.calc-wrapper {
   border-radius: 15px;
   z-index: 2;
   overflow: hidden;
-  margin: 25px;
+  margin: auto;
   justify-content: center;
   align-items: center;
   background-color: hsla(0deg, 45%, 45%, 0.3);
