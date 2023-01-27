@@ -51,6 +51,12 @@ clear.addEventListener("click", (e) => {
     document.getElementById("result").innerText = "";
 });
 
+const decimal = document.getElementById("decimal");
+
+decimal.addEventListener("click", (e) => {
+    document.getElementById("result").innerText += "."
+})
+
 const numOne = document.getElementById("1");
 
 numOne.addEventListener("click", (e) => {
@@ -155,6 +161,9 @@ document.addEventListener("keypress", function(event) {
         break;
       case "NumpadDivide":
         document.getElementById("result").innerText += "/";
+        break;
+      case "NumpadDecimal":
+        document.getElementById("result").innerText += "."
         break;
       case "Equal":
       case "Enter":
