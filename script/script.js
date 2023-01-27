@@ -121,7 +121,7 @@ document.addEventListener("keypress", function(event) {
     
     switch (event.code) {
       case "Numpad1":
-            document.getElementById("result").innerText += "1";
+        document.getElementById("result").innerText += "1";
         break;
       case "Numpad2":
         document.getElementById("result").innerText += "2";
@@ -165,9 +165,8 @@ document.addEventListener("keypress", function(event) {
       case "NumpadDecimal":
         document.getElementById("result").innerText += ".";
         break;
-      case "Backspace":
+      case 8:
         document.getElementById("result").innerText = "";
-        event.preventDefault();
         break;
       case "Equal":
       case "Enter":

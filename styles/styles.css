@@ -25,13 +25,15 @@ Note to add scss variables for like values. Use partials for group style like bu
 div.calc-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 425px;
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 16px 16px 24px 16px;
   border: 1px solid black;
   border-radius: 15px;
   z-index: 2;
   overflow: hidden;
-  margin: auto;
+  margin: 25px;
   justify-content: center;
   align-items: center;
   background-color: hsla(0deg, 45%, 45%, 0.3);
@@ -44,14 +46,14 @@ div.calc-body {
   flex-wrap: wrap;
   width: 215px;
   outline: 1px solid hsl(0deg, 0%, 100%);
-  outline-offset: 1rem;
-  outline-width: 0.2rem;
+  outline-offset: 16px;
+  outline-width: 3.2px;
   outline-color: hsla(50deg, 35%, 65%, 0.9);
-  gap: 1rem;
-  justify-content: space-around;
+  gap: 24px;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
-  margin: 1.2rem;
+  padding: 16px;
+  margin: 19.2px;
   border-radius: 15px;
   border: 1px solid black;
   z-index: 2;
@@ -79,6 +81,9 @@ div.style::before {
 
 main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: linear-gradient(3turn, hsla(205deg, 55%, 45%, 0.8), hsla(139deg, 45%, 55%, 0.5));
 }
@@ -88,8 +93,8 @@ div.calc-wrapper h3 {
 }
 div.symbol {
   display: flex;
-  padding: 0.5rem;
-  margin: 0.1rem;
+  padding: 10px;
+  margin: 5px;
   align-items: center;
   justify-self: space-around;
   border: 1px solid black;
@@ -114,6 +119,12 @@ div.result {
 }
 div.result::content {
   content: "";
+}
+div.result span.contain {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  padding: 16px;
 }
 
 div.symbol:hover {
