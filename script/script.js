@@ -157,7 +157,10 @@ document.addEventListener("keypress", function(event) {
         document.getElementById("result").innerText += "/";
         break;
       case "Equal":
+      case "Enter":
+      case "NumpadEnter":
         document.getElementById("result").innerText =  eval(document.getElementById("result").innerText);
+        break;
         default:
         break;
     }
