@@ -1,6 +1,8 @@
 # Calculator
 Making a calculator using pure JavaScript DOM
 
+![](./screenshot/Screenshot.PNG)
+
 # Project URL
 Please visit https://astonishing-choux-a439c4.netlify.app/ to view the full app.
 
@@ -15,3 +17,5 @@ I'd like to implement a separate screen hovering at the side to save the answers
 
 # Inspiration
 The Calculator design is inspired from the calculator I once used for my WAEC/NECO exams in Secondary School.
+
+
