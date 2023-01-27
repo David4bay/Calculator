@@ -166,7 +166,7 @@ document.addEventListener("keypress", function(event) {
         document.getElementById("result").innerText += ".";
         break;
       case "Backspace":
-        document.getElementById("result").innerText += "";
+        document.getElementById("result").innerText = "";
         break;
       case "Equal":
       case "Enter":
