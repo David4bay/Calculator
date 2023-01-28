@@ -1,13 +1,3 @@
-/* 
-
-Add functionality in pure JavaScript DOM and leave comments on jQuery implementation.
-
-document.getElementById("1").addEventListener("click", function(){
-    document.getElementById("result").innerText += "1";
-});
-
-
-*/
 
 const addition = document.getElementById("+");
 
