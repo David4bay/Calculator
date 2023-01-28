@@ -42,7 +42,7 @@ division.addEventListener("click", (e) => {
 const equals = document.getElementById("equals");
 
 equals.addEventListener("click", (e) => {
-    document.getElementById("result").innerText =  eval(document.getElementById("result").innerText);                                      
+    document.getElementById("result").innerText =  eval(document.getElementById("result").innerText).replace(/[^**-+/*\d]/g, '');                                      
 });
 
 const clear = document.getElementById("clear");
