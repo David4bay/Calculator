@@ -32,7 +32,7 @@ division.addEventListener("click", (e) => {
 const equals = document.getElementById("equals");
 
 equals.addEventListener("click", (e) => {
-    document.getElementById("result").innerText =  eval(document.getElementById("result").innerText);                                      
+    document.getElementById("result").innerText =  math.round(math.evaluate(document.getElementById("result").innerText, 3));                                      
 });
 
 const clear = document.getElementById("clear");

@@ -1,18 +1,18 @@
 $btn-color: hsl(0, 0%, 100%);
 $border: 1px solid black;
 $background: linear-gradient(3turn, hsla(205, 55%, 45%, 0.8), hsla(139, 45%, 55%, 0.5));
-$calc-width: 425px;
+$calc-width: 450px;
 
 %calc-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: $calc-width;
-    padding: 16px 16px 24px 16px;
+    width: $calc-width;
+    padding: 16px 16px 30px 16px;
     margin: auto;
     border: $border;
-    border-radius: 15px;
+    border-radius: 25px;
     z-index: 2;
     overflow: hidden;
     justify-content: center;
