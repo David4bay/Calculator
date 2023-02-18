@@ -17,6 +17,9 @@ I learnt a lot about JavaScript DOM scripting.
 I'd like to implement a separate screen hovering at the side to save the answers up to a certain limit. Also hope to create a variant that uses jQuery for it's logic.
 ADDED REGEX TO PREVENT UNWANTED CODE EXECUTION THROUGH EVAL() FUNCTION.
 
+#Update
+Added Del functionality and switched eval() function to mathjs library.
+
 # Inspiration
 The Calculator design is inspired from the calculator I once used for my WAEC/NECO exams in Secondary School.
 
