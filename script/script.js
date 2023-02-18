@@ -32,7 +32,7 @@ division.addEventListener("click", (e) => {
 const equals = document.getElementById("equals");
 
 equals.addEventListener("click", (e) => {
-    document.getElementById("result").innerText =  math.round(math.evaluate(document.getElementById("result").innerText, 3));                                      
+    document.getElementById("result").innerText =  math.evaluate(document.getElementById("result").innerText);                                      
 });
 
 const clear = document.getElementById("clear");
@@ -40,6 +40,12 @@ const clear = document.getElementById("clear");
 clear.addEventListener("click", (e) => {
     document.getElementById("result").innerText = "";
 });
+
+const deleted = document.getElementById("delete");
+
+deleted.addEventListener("click", (e) => {
+  document.getElementById("result").innerText = document.getElementById("result").innerText.replace(/\d$/, "");
+})
 
 const decimal = document.getElementById("decimal");
 
