@@ -44,7 +44,7 @@ clear.addEventListener("click", (e) => {
 const deleted = document.getElementById("delete");
 
 deleted.addEventListener("click", (e) => {
-  document.getElementById("result").innerText = document.getElementById("result").innerText.replace(/\d$/, "");
+  document.getElementById("result").innerText = document.getElementById("result").innerText.replace(/\s$|\d$|\D$/, "");
 })
 
 const decimal = document.getElementById("decimal");
