@@ -167,7 +167,7 @@ document.addEventListener("keypress", function(event) {
       case "Equal":
       case "Enter":
       case "NumpadEnter":
-        document.getElementById("result").innerText =  eval(document.getElementById("result").innerText.replace(/[^**-+/*\d]/g, ''));
+        document.getElementById("result").innerText =  math.evaluate(document.getElementById("result").innerText);
         break;
         default:
         break;
