@@ -113,7 +113,6 @@ div.style {
     background-color: gray;
     position: absolute;
     transform: rotate(45deg);
-    animation: wavy 5s ease-in-out infinite;
 
     &::after {
         @extend %pseudo-style-1;
@@ -124,20 +123,3 @@ div.style {
     }
 }
 
-@keyframes wavy {
-    0% {
-        transform: rotate(45deg) translate(0%, 0%);
-    }
-    25% {
-        transform: rotate(45deg) translate(0%, 1200%);
-    }
-    50% {
-        transform: rotate(45deg) translate(0%, 0%);
-    }
-    75% {
-        transform: rotate(45deg) translate(0%, -1200%);
-    }
-    100% {
-        transform: rotate(45deg) translate(0%, 0%);
-    }
-}

@@ -154,40 +154,4 @@ div.style {
   background-color: gray;
   position: absolute;
   transform: rotate(45deg);
-  -webkit-animation: wavy 5s ease-in-out infinite;
-          animation: wavy 5s ease-in-out infinite;
-}
-@-webkit-keyframes wavy {
-  0% {
-    transform: rotate(45deg) translate(0%, 0%);
-  }
-  25% {
-    transform: rotate(45deg) translate(0%, 1200%);
-  }
-  50% {
-    transform: rotate(45deg) translate(0%, 0%);
-  }
-  75% {
-    transform: rotate(45deg) translate(0%, -1200%);
-  }
-  100% {
-    transform: rotate(45deg) translate(0%, 0%);
-  }
-}
-@keyframes wavy {
-  0% {
-    transform: rotate(45deg) translate(0%, 0%);
-  }
-  25% {
-    transform: rotate(45deg) translate(0%, 1200%);
-  }
-  50% {
-    transform: rotate(45deg) translate(0%, 0%);
-  }
-  75% {
-    transform: rotate(45deg) translate(0%, -1200%);
-  }
-  100% {
-    transform: rotate(45deg) translate(0%, 0%);
-  }
 }/*# sourceMappingURL=styles.css.map */
