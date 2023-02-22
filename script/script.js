@@ -17,10 +17,10 @@ multiply.addEventListener("click", (e) => {
     document.getElementById("result").innerText += "*";
 });
 
-const exponent = document.getElementById("**");
+const exponent = document.getElementById("^");
 
 exponent.addEventListener("click", (e) => {
-    document.getElementById("result").innerText += "**";
+    document.getElementById("result").innerText += "^";
 });
 
 const division = document.getElementById("/");

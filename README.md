@@ -19,8 +19,7 @@ ADDED REGEX TO PREVENT UNWANTED CODE EXECUTION THROUGH EVAL() FUNCTION.
 
 #Update
 Added Del functionality and switched eval() function to mathjs library.
+Changed exponent symbol for compatibility with mathjs evaluator and parser.
 
 # Inspiration
 The Calculator design is inspired from the calculator I once used for my WAEC/NECO exams in Secondary School.
-
-
